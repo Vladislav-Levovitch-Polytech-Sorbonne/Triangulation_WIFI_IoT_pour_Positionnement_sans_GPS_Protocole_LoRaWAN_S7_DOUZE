@@ -22,7 +22,7 @@ void loop()
   if (Serial.available() > 0) //Verification asynchrone de la disponibilite d une intruction
   {
     String command = Serial.readStringUntil('\n'); //Lecture instruction
-    if (command.equalsIgnoreCase("STOP")) \\IgnoreCase permet de pouvoir ecrire la consigne avec des minuscules inclues en cas d oublie de maj
+    if (command.equalsIgnoreCase("STOP")) //IgnoreCase permet de pouvoir ecrire la consigne avec des minuscules inclues en cas d oublie de maj
     {
       Serial.print("Arret de l affichage de l adresse MAC\tPour reprendre envoyer \"MAC\"\n");
       while (true) 
