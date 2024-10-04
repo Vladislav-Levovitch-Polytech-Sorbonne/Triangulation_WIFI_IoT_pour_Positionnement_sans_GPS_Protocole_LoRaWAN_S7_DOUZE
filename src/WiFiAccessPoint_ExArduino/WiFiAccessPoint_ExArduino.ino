@@ -47,26 +47,26 @@ const char *ssid = APSSID;
 
 ESP8266WebServer server(80);
 
-void handleRoot() {
-  server.send(200, "text/html", "<h1>You are connected</h1>");
-}
-
 void setup() {
-  delay(1000);
+  delay(200);
   Serial.begin(115200);
-  Serial.println();
-  Serial.print("Configuring access point...");
+  Serial.println("Configuring access point...");
   
   WiFi.softAP(ssid);
 
   IPAddress myIP = WiFi.softAPIP();
   Serial.print("AP IP address: ");
   Serial.println(myIP);
-  server.on("/", handleRoot);
-  server.begin();
-  Serial.println("HTTP server started");
+
+  String macAddress = WiFi.softAPmacAddress();  // Récupérer l'adresse MAC
+  Serial.print("AP MAC address: ");
+  Serial.println(macAddress);
 }
 
 void loop() {
   server.handleClient();
+  String macAddress = WiFi.softAPmacAddress();  // Récupérer l'adresse MAC
+  Serial.print("AP MAC address: ");
+  Serial.println(macAddress);
+  delay(2000);
 }
