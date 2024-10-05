@@ -72,10 +72,39 @@ void loop()
       Serial.print(i + 1);
       Serial.print(" / ");
       Serial.print(Nb_Reseau);
+
+      Serial.print("\t+ MAC = ");
+      for (int i = 0; i < 6; i++)
+      {
+        if (BSSID[i] < 16) 
+        {
+          Serial.print("0"); //Cas ou un 0 est en Hex de poid fort sinon printf et PSTR
+        }
+        Serial.print(BSSID[i],HEX);
+
+        if (i < 5)
+        {
+          Serial.print("-");
+        }
+      }
       Serial.print("\t+ RSSi = ");
       Serial.print(RSSI);
-      Serial.print(" dB \t+ SSiD = ");
+      Serial.print(" dB => Distance_Estime = ");
+
+      if (RSSI > -56) 
+      {
+        Serial.print(pow(10, -((RSSI + 45) / 50.0))); 
+      } 
+
+      else 
+      {
+        Serial.print(pow(10, -((RSSI + 56) / 33.0))); 
+      } 
+
+      Serial.print("m\t\t+ SSiD = ");
       Serial.println(ssid);
+      
+      
 
       yield(); //Securite pour verifier s il y a des interruptions
     }
