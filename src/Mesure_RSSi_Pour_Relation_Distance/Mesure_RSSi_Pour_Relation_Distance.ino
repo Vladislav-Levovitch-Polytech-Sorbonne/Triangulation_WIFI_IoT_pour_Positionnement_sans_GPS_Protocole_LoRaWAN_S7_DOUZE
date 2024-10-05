@@ -11,6 +11,28 @@ void setup() {
 
 void loop() 
 {
+  //Communication Serie pour log et affichage
+  if (Serial.available() > 0) //Verification asynchrone de la disponibilite d une intruction
+  {
+    String command = Serial.readStringUntil('\n'); //Lecture instruction
+    if (command.equalsIgnoreCase("STOP")) //IgnoreCase permet de pouvoir ecrire la consigne avec des minuscules inclues en cas d oublie de maj
+    {
+      Serial.print("Arret de l affichage des RSSi et infos réseaux \tPour reprendre envoyer \"ON\"\n");
+      while (true) 
+      {
+        if (Serial.available() > 0) //Verification reprise d affichage
+        {
+          String resumeCommand = Serial.readStringUntil('\n');
+          if (resumeCommand.equalsIgnoreCase("ON")) 
+          {
+            Serial.println("Demarrage de l affichage\tPour arreter envoyer\"STOP\"");
+            break;
+          }
+        }
+      }
+    }
+  }
+
   //Variables pour le getNetworkInfo
   String ssid;  //WiFi.SSID()
   uint8_t encryptionType; 
@@ -41,6 +63,7 @@ void loop()
     Serial.print("Nombre de reseau trouve : ");
     Serial.println(Nb_Reseau);
 
+    //Affichage des donnees de chaque reseau
     for (int8_t i = 0; i < Nb_Reseau; i++)
     {
       WiFi.getNetworkInfo(i, ssid, encryptionType, RSSI, BSSID, channel, isHidden);
