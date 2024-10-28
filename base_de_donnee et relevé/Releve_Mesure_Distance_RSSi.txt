@@ -1,0 +1,186 @@
++ 11 / 25	+ MAC = 58-97-BD-CD-9C-61	+ RSSi = -78 dB => Distance_Estime = 4.64m		+ SSiD = CONGRES
++ 12 / 25	+ MAC = 20-AA-4B-63-EB-EC	+ RSSi = -84 dB => Distance_Estime = 7.05m		+ SSiD = irill
++ 13 / 25	+ MAC = 58-97-BD-CD-9C-63	+ RSSi = -77 dB => Distance_Estime = 4.33m		+ SSiD = SCAI
++ 14 / 25	+ MAC = C6-01-92-B1-A8-32	+ RSSi = -67 dB => Distance_Estime = 2.15m		+ SSiD = 
++ 15 / 25	+ MAC = D6-AA-38-24-2A-06	+ RSSi = -88 dB => Distance_Estime = 9.33m		+ SSiD = Ghost 
++ 16 / 25	+ MAC = 58-97-BD-07-D6-61	+ RSSi = -84 dB => Distance_Estime = 7.05m		+ SSiD = eduspot
++ 17 / 25	+ MAC = 3A-33-B2-4F-83-FF	+ RSSi = -83 dB => Distance_Estime = 6.58m		+ SSiD = Boul khalat sax connecté wou
++ 18 / 25	+ MAC = D2-2C-9B-E1-FA-83	+ RSSi = -62 dB => Distance_Estime = 1.52m		+ SSiD = T_Galaxy_A52s
++ 19 / 25	+ MAC = 4A-7F-E6-77-66-18	+ RSSi = -80 dB => Distance_Estime = 5.34m		+ SSiD = iPhone de Benjamin
++ 20 / 25	+ MAC = 46-0E-A2-EF-40-76	+ RSSi = -74 dB => Distance_Estime = 3.51m		+ SSiD = Fatoumata Falil's Galaxy S22 Ult
++ 21 / 25	+ MAC = C2-DB-D1-22-C8-C4	+ RSSi = -85 dB => Distance_Estime = 7.56m		+ SSiD = Emilie 
++ 22 / 25	+ MAC = 58-97-BD-D0-96-61	+ RSSi = -75 dB => Distance_Estime = 3.76m		+ SSiD = CONGRES
++ 23 / 25	+ MAC = 22-BE-E1-55-88-A0	+ RSSi = -67 dB => Distance_Estime = 2.15m		+ SSiD = 
++ 24 / 25	+ MAC = 58-97-BD-D0-96-63	+ RSSi = -76 dB => Distance_Estime = 4.04m		+ SSiD = SCAI
++ 25 / 25	+ MAC = 58-97-BD-07-D6-64	+ RSSi = -86 dB => Distance_Estime = 8.11m		+ SSiD = eduroam
+ . . . .
++ 12 / 21	+ MAC = 4A-AA-C5-74-54-CF	+ RSSi = -71 dB => Distance_Estime = 2.85m		+ SSiD = Ilyes
++ 13 / 21	+ MAC = 6E-04-1F-1F-42-60	+ RSSi = -75 dB => Distance_Estime = 3.76m		+ SSiD = Redmi A1
++ 14 / 21	+ MAC = 58-97-BD-CD-9C-62	+ RSSi = -76 dB => Distance_Estime = 4.04m		+ SSiD = eduroam
++ 15 / 21	+ MAC = 20-AA-4B-63-EB-EC	+ RSSi = -87 dB => Distance_Estime = 8.70m		+ SSiD = irill
++ 16 / 21	+ MAC = 58-97-BD-CD-9C-61	+ RSSi = -77 dB => Distance_Estime = 4.33m		+ SSiD = CONGRES
++ 17 / 21	+ MAC = 58-97-BD-CD-9C-63	+ RSSi = -77 dB => Distance_Estime = 4.33m		+ SSiD = SCAI
++ 18 / 21	+ MAC = 5A-C5-26-C3-DE-F9	+ RSSi = -86 dB => Distance_Estime = 8.11m		+ SSiD = Sou ;-)
++ 19 / 21	+ MAC = 12-60-DD-D5-3B-C9	+ RSSi = -92 dB => Distance_Estime = 12.33m		+ SSiD = moto e13
++ 20 / 21	+ MAC = 46-0E-A2-EF-40-76	+ RSSi = -69 dB => Distance_Estime = 2.48m		+ SSiD = Fatoumata Falil's Galaxy S22 Ult
++ 21 / 21	+ MAC = D2-2C-9B-E1-FA-83	+ RSSi = -56 dB => Distance_Estime = 1.00m		+ SSiD = T_Galaxy_A52s
+ . . . . .
+
+Nombre de reseau trouve : 25
++ 1 / 25	+ MAC = EE-FA-BC-A8-09-D2	+ RSSi = -81 dB => Distance_Estime = 5.72m		+ SSiD = ESP8266_acces_point_304
++ 2 / 25	+ MAC = 86-F3-EB-8E-6F-B1	+ RSSi = -84 dB => Distance_Estime = 7.05m		+ SSiD = ESP8266_acces_point_206
++ 3 / 25	+ MAC = D6-AA-38-24-2A-06	+ RSSi = -88 dB => Distance_Estime = 9.33m		+ SSiD = Ghost 
++ 4 / 25	+ MAC = 58-97-BD-07-D6-62	+ RSSi = -86 dB => Distance_Estime = 8.11m		+ SSiD = CONGRES
++ 5 / 25	+ MAC = 58-97-BD-07-D6-61	+ RSSi = -84 dB => Distance_Estime = 7.05m		+ SSiD = eduspot
++ 6 / 25	+ MAC = 52-57-9C-BF-CB-7A	+ RSSi = -67 dB => Distance_Estime = 2.15m		+ SSiD = DIRECT-H1YObEB862625GOLO
+
+
++ 22 / 27	+ MAC = C2-DB-D1-22-C8-C4	+ RSSi = -92 dB => Distance_Estime = 12.33m		+ SSiD = Emilie 
++ 23 / 27	+ MAC = 58-97-BD-D0-96-60	+ RSSi = -76 dB => Distance_Estime = 4.04m		+ SSiD = eduspot
++ 24 / 27	+ MAC = 3A-33-B2-4F-83-FF	+ RSSi = -93 dB => Distance_Estime = 13.22m		+ SSiD = Boul khalat sax connecté wou
++ 25 / 27	+ MAC = 22-BE-E1-55-88-A0	+ RSSi = -66 dB => Distance_Estime = 2.01m		+ SSiD = 
++ 26 / 27	+ MAC = 02-A3-BF-DF-83-FF	+ RSSi = -88 dB => Distance_Estime = 9.33m		+ SSiD = Nando
++ 27 / 27	+ MAC = 58-97-BD-D0-96-62	+ RSSi = -76 dB => Distance_Estime = 4.04m		+ SSiD = eduroam
+ . . . . .
+
+Nombre de reseau trouve : 21
++ 1 / 21	+ MAC = 86-F3-EB-8E-6F-B1	+ RSSi = -80 dB => Distance_Estime = 5.34m		+ SSiD = ESP8266_acces_point_206
++ 2 / 21	+ MAC = 52-57-9C-BF-CB-7A	+ RSSi = -71 dB => Distance_Estime = 2.85m		+ SSiD = DIRECT-H1YObEB862625GOLO
++ 3 / 21	+ MAC = EE-FA-BC-A8-09-D2	+ RSSi = -86 dB => Distance_Estime = 8.11m		+ SSiD = ESP8266_acces_point_304
++ 4 / 21	+ MAC = 04-D9-F5-74-E0-B0	+ RSSi = -82 dB => Distance_Estime = 6.14m		+ SSiD = PPIAdmin
++ 5 / 21	+ MAC = 58-97-BD-07-D6-62	+ RSSi = -84 dB => Distance_Estime = 7.05m		+ SSiD = CONGRES
++ 6 / 21	+ MAC = 58-97-BD-07-D6-61	+ RSSi = -84 dB => Distance_Estime = 7.05m		+ SSiD = eduspot
++ 7 / 21	+ MAC = 58-97-BD-07-D6-64	+ RSSi = -83 dB => Distance_Estime = 6.58m		+ SSiD = eduroam
++ 8 / 21	+ MAC = D6-AA-38-24-2A-06	+ RSSi = -87 dB => Distance_Estime = 8.70m		+ SSiD = Ghost 
++ 9 / 21	+ MAC = 96-2E-7F-B1-44-BF	+ RSSi = -56 dB => Distance_Estime = 1.00m		+ SSiD = dargouaga
++ 10 / 21	+ MAC = 4A-AA-C5-74-54-CF	+ RSSi = -76 dB => Distance_Estime = 4.04m		+ SSiD = Ilyes
++ 11 / 21	+ MAC = 58-97-BD-CD-9C-62	+ RSSi = -75 dB => Distance_Estime = 3.76m		+ SSiD = eduroam
++ 12 / 21	+ MAC = 58-97-BD-CD-9C-61	+ RSSi = -77 dB => Distance_Estime = 4.33m		+ SSiD = CONGRES
++ 13 / 21	+ MAC = 5A-C5-26-C3-DE-F9	+ RSSi = -84 dB => Distance_Estime = 7.05m		+ SSiD = Sou ;-)
++ 14 / 21	+ MAC = 6E-04-1F-1F-42-60	+ RSSi = -73 dB => Distance_Estime = 3.27m		+ SSiD = Redmi A1
++ 15 / 21	+ MAC = 80-3F-5D-11-FA-7F	+ RSSi = -89 dB => Distance_Estime = 10.00m		+ SSiD = UPMC-Amphi-Herpin-To
++ 16 / 21	+ MAC = C2-DB-D1-22-C8-C4	+ RSSi = -88 dB => Distance_Estime = 9.33m		+ SSiD = Emilie 
++ 17 / 21	+ MAC = D2-2C-9B-E1-FA-83	+ RSSi = -61 dB => Distance_Estime = 1.42m		+ SSiD = T_Galaxy_A52s
++ 18 / 21	+ MAC = 46-0E-A2-EF-40-76	+ RSSi = -84 dB => Distance_Estime = 7.05m		+ SSiD = Fatoumata Falil's Galaxy S22 Ult
++ 19 / 21	+ MAC = 4A-7F-E6-77-66-18	+ RSSi = -83 dB => Distance_Estime = 6.58m		+ SSiD = iPhone de Benjamin
++ 20 / 21	+ MAC = 58-97-BD-D0-96-61	+ RSSi = -76 dB => Distance_Estime = 4.04m		+ SSiD = CONGRES
+
++ 5 / 21	+ MAC = 58-97-BD-07-D6-62	+ RSSi = -83 dB => Distance_Estime = 6.58m		+ SSiD = CONGRES
++ 6 / 21	+ MAC = 58-97-BD-07-D6-61	+ RSSi = -83 dB => Distance_Estime = 6.58m		+ SSiD = eduspot
++ 7 / 21	+ MAC = D6-AA-38-24-2A-06	+ RSSi = -91 dB => Distance_Estime = 11.50m		+ SSiD = Ghost 
++ 8 / 21	+ MAC = 80-3F-5D-11-FA-7F	+ RSSi = -92 dB => Distance_Estime = 12.33m		+ SSiD = UPMC-Amphi-Herpin-To
++ 9 / 21	+ MAC = 58-97-BD-07-D6-64	+ RSSi = -84 dB => Distance_Estime = 7.05m		+ SSiD = eduroam
++ 10 / 21	+ MAC = 58-97-BD-CD-9C-60	+ RSSi = -77 dB => Distance_Estime = 4.33m		+ SSiD = eduspot
++ 11 / 21	+ MAC = 96-2E-7F-B1-44-BF	+ RSSi = -56 dB => Distance_Estime = 1.00m		+ SSiD = dargouaga
++ 12 / 21	+ MAC = 4A-AA-C5-74-54-CF	+ RSSi = -71 dB => Distance_Estime = 2.85m		+ SSiD = Ilyes
++ 13 / 21	+ MAC = 6E-04-1F-1F-42-60	+ RSSi = -75 dB => Distance_Estime = 3.76m		+ SSiD = Redmi A1
++ 14 / 21	+ MAC = 58-97-BD-CD-9C-62	+ RSSi = -76 dB => Distance_Estime = 4.04m		+ SSiD = eduroam
++ 15 / 21	+ MAC = 20-AA-4B-63-EB-EC	+ RSSi = -87 dB => Distance_Estime = 8.70m		+ SSiD = irill
++ 16 / 21	+ MAC = 58-97-BD-CD-9C-61	+ RSSi = -77 dB => Distance_Estime = 4.33m		+ SSiD = CONGRES
++ 17 / 21	+ MAC = 58-97-BD-CD-9C-63	+ RSSi = -77 dB => Distance_Estime = 4.33m		+ SSiD = SCAI
++ 18 / 21	+ MAC = 5A-C5-26-C3-DE-F9	+ RSSi = -86 dB => Distance_Estime = 8.11m		+ SSiD = Sou ;-)
++ 19 / 21	+ MAC = 12-60-DD-D5-3B-C9	+ RSSi = -92 dB => Distance_Estime = 12.33m		+ SSiD = moto e13
++ 20 / 21	+ MAC = 46-0E-A2-EF-40-76	+ RSSi = -69 dB => Distance_Estime = 2.48m		+ SSiD = Fatoumata Falil's Galaxy S22 Ult
++ 21 / 21	+ MAC = D2-2C-9B-E1-FA-83	+ RSSi = -56 dB => Distance_Estime = 1.00m		+ SSiD = T_Galaxy_A52s
+
++ 5 / 18	+ MAC = 04-D9-F5-74-E0-B0	+ RSSi = -86 dB => Distance_Estime = 8.11m		+ SSiD = PPIAdmin
++ 6 / 18	+ MAC = 58-97-BD-07-D6-62	+ RSSi = -80 dB => Distance_Estime = 5.34m		+ SSiD = CONGRES
++ 7 / 18	+ MAC = 58-97-BD-07-D6-61	+ RSSi = -82 dB => Distance_Estime = 6.14m		+ SSiD = eduspot
++ 8 / 18	+ MAC = 80-3F-5D-11-FA-7F	+ RSSi = -89 dB => Distance_Estime = 10.00m		+ SSiD = UPMC-Amphi-Herpin-To
++ 9 / 18	+ MAC = 56-25-2B-54-18-30	+ RSSi = -86 dB => Distance_Estime = 8.11m		+ SSiD = HONOR 90 Lite
++ 10 / 18	+ MAC = 58-97-BD-07-D6-64	+ RSSi = -82 dB => Distance_Estime = 6.14m		+ SSiD = eduroam
++ 11 / 18	+ MAC = 96-2E-7F-B1-44-BF	+ RSSi = -54 dB => Distance_Estime = 1.20m		+ SSiD = dargouaga
++ 12 / 18	+ MAC = 4A-AA-C5-74-54-CF	+ RSSi = -71 dB => Distance_Estime = 2.85m		+ SSiD = Ilyes
++ 13 / 18	+ MAC = 5A-C5-26-C3-DE-F9	+ RSSi = -80 dB => Distance_Estime = 5.34m		+ SSiD = Sou ;-)
++ 14 / 18	+ MAC = C2-DB-D1-22-C8-C4	+ RSSi = -88 dB => Distance_Estime = 9.33m		+ SSiD = Emilie 
++ 15 / 18	+ MAC = D2-2C-9B-E1-FA-83	+ RSSi = -65 dB => Distance_Estime = 1.87m		+ SSiD = T_Galaxy_A52s
++ 16 / 18	+ MAC = 46-0E-A2-EF-40-76	+ RSSi = -71 dB => Distance_Estime = 2.85m		+ SSiD = Fatoumata Falil's Galaxy S22 Ult
++ 17 / 18	+ MAC = 4A-7F-E6-77-66-18	+ RSSi = -85 dB => Distance_Estime = 7.56m		+ SSiD = iPhone de Benjamin
++ 18 / 18	+ MAC = 58-97-BD-D0-96-63	+ RSSi = -76 dB => Distance_Estime = 4.04m		+ SSiD = SCAI
+ . . . . .
+
+Nombre de reseau trouve : 23
++ 1 / 23	+ MAC = 52-57-9C-BF-CB-7A	+ RSSi = -68 dB => Distance_Estime = 2.31m		+ SSiD = DIRECT-H1YObEB862625GOLO
++ 2 / 23	+ MAC = 86-F3-EB-8E-6F-B1	+ RSSi = -76 dB => Distance_Estime = 4.04m		+ SSiD = ESP8266_acces_point_206
++ 3 / 23	+ MAC = 58-97-BD-07-D6-61	+ RSSi = -82 dB => Distance_Estime = 6.14m		+ SSiD = eduspot
++ 4 / 23	+ MAC = EE-FA-BC-A8-09-D2	+ RSSi = -82 dB => Distance_Estime = 6.14m		+ SSiD = ESP8266_acces_point_304
++ 5 / 23	+ MAC = 80-3F-5D-11-FA-7F	+ RSSi = -85 dB => Distance_Estime = 7.56m		+ SSiD = UPMC-Amphi-Herpin-To
+
++ 17 / 20	+ MAC = 46-0E-A2-EF-40-76	+ RSSi = -76 dB => Distance_Estime = 4.04m		+ SSiD = Fatoumata Falil's Galaxy S22 Ult
++ 18 / 20	+ MAC = 02-A3-BF-DF-83-FF	+ RSSi = -88 dB => Distance_Estime = 9.33m		+ SSiD = Nando
++ 19 / 20	+ MAC = 22-BE-E1-55-88-A0	+ RSSi = -68 dB => Distance_Estime = 2.31m		+ SSiD = 
++ 20 / 20	+ MAC = 58-97-BD-D0-96-63	+ RSSi = -74 dB => Distance_Estime = 3.51m		+ SSiD = SCAI
+ . . . . .
+
+Nombre de reseau trouve : 23
++ 1 / 23	+ MAC = 52-57-9C-BF-CB-7A	+ RSSi = -67 dB => Distance_Estime = 2.15m		+ SSiD = DIRECT-H1YObEB862625GOLO
++ 2 / 23	+ MAC = EE-FA-BC-A8-09-D2	+ RSSi = -84 dB => Distance_Estime = 7.05m		+ SSiD = ESP8266_acces_point_304
++ 3 / 23	+ MAC = 80-3F-5D-11-FA-7F	+ RSSi = -87 dB => Distance_Estime = 8.70m		+ SSiD = UPMC-Amphi-Herpin-To
++ 4 / 23	+ MAC = 86-F3-EB-8E-6F-B1	+ RSSi = -83 dB => Distance_Estime = 6.58m		+ SSiD = ESP8266_acces_point_206
++ 5 / 23	+ MAC = 58-97-BD-07-D6-64	+ RSSi = -85 dB => Distance_Estime = 7.56m		+ SSiD = eduroam
++ 6 / 23	+ MAC = 58-97-BD-07-D6-62	+ RSSi = -84 dB => Distance_Estime = 7.05m		+ SSiD = CONGRES
++ 7 / 23	+ MAC = 04-D9-F5-74-E0-B0	+ RSSi = -87 dB => Distance_Estime = 8.70m		+ SSiD = PPIAdmin
++ 8 / 23	+ MAC = 58-97-BD-07-D6-61	+ RSSi = -84 dB => Distance_Estime = 7.05m		+ SSiD = eduspot
++ 9 / 23	+ MAC = 6E-04-1F-1F-42-60	+ RSSi = -69 dB => Distance_Estime = 2.48m		+ SSiD = Redmi A1
++ 10 / 23	+ MAC = 96-2E-7F-B1-44-BF	+ RSSi = -58 dB => Distance_Estime = 1.15m		+ SSiD = dargouaga
++ 11 / 23	+ MAC = 4A-AA-C5-74-54-CF	+ RSSi = -73 dB => Distance_Estime = 3.27m		+ SSiD = Ilyes
++ 12 / 23	+ MAC = 58-97-BD-CD-9C-60	+ RSSi = -76 dB => Distance_Estime = 4.04m		+ SSiD = eduspot
++ 13 / 23	+ MAC = 58-97-BD-CD-9C-62	+ RSSi = -78 dB => Distance_Estime = 4.64m		+ SSiD = eduroam
++ 14 / 23	+ MAC = 58-97-BD-CD-9C-61	+ RSSi = -77 dB => Distance_Estime = 4.33m		+ SSiD = CONGRES
++ 15 / 23	+ MAC = 58-97-BD-CD-9C-63	+ RSSi = -76 dB => Distance_Estime = 4.04m		+ SSiD = SCAI
++ 16 / 23	+ MAC = 20-AA-4B-63-EB-EC	+ RSSi = -89 dB => Distance_Estime = 10.00m		+ SSiD = irill
++ 17 / 23	+ MAC = 5A-C5-26-C3-DE-F9	+ RSSi = -82 dB => Distance_Estime = 6.14m		+ SSiD = Sou ;-)
++ 18 / 23	+ MAC = C8-BE-19-70-D0-D8	+ RSSi = -85 dB => Distance_Estime = 7.56m		+ SSiD = EtuPPI
+
+
+
+2930
+#include <DHT.h> //Librairie pour le capteur 
+#include <ESP8266WiFi.h>
+
+#define DHTPIN 13  //GPIO13 = broche D7
+#define DHTTYPE DHT22
+
+//Initialisation du capteur
+DHT dht(DHTPIN, DHTTYPE); 
+
+void setup() 
+…    Serial.print("ERROR ISNOTANUMBER : Verfier liaison capteur et contacter admin");
+    return;
+  }
+
+  // Test des donnees
+  Serial.println("Temperature : " + String(temperature)+" °C");
+  Serial.println("Humidite : " + String(humidite)+" %");
+}
+
+Message (Enter to send message to 'NodeMCU 1.0 (ESP-12E Module)' on 'COM3')
+New Line
+9600 baud
++ 13 / 21	+ MAC = 58-97-BD-CD-9C-61	+ RSSi = -78 dB => Distance_Estime = 4.64m		+ SSiD = CONGRES
++ 14 / 21	+ MAC = 56-AB-26-C2-DB-A6	+ RSSi = -87 dB => Distance_Estime = 8.70m		+ SSiD = Galaxy A54 5G F92E
++ 15 / 21	+ MAC = 58-97-BD-CD-9C-62	+ RSSi = -78 dB => Distance_Estime = 4.64m		+ SSiD = eduroam
++ 16 / 21	+ MAC = 5A-C5-26-C3-DE-F9	+ RSSi = -84 dB => Distance_Estime = 7.05m		+ SSiD = Sou ;-)
++ 17 / 21	+ MAC = 58-97-BD-CD-9C-63	+ RSSi = -77 dB => Distance_Estime = 4.33m		+ SSiD = SCAI
++ 18 / 21	+ MAC = 3E-5C-10-21-89-77	+ RSSi = -90 dB => Distance_Estime = 10.72m		+ SSiD = Iphone
++ 19 / 21	+ MAC = 58-97-BD-07-D6-64	+ RSSi = -82 dB => Distance_Estime = 6.14m		+ SSiD = eduroam
++ 20 / 21	+ MAC = D2-2C-9B-E1-FA-83	+ RSSi = -60 dB => Distance_Estime = 1.32m		+ SSiD = T_Galaxy_A52s
++ 21 / 21	+ MAC = 58-97-BD-D0-96-63	+ RSSi = -74 dB => Distance_Estime = 3.51m		+ SSiD = SCAI
+ . . . . .
+
+Nombre de reseau trouve : 22
++ 1 / 22	+ MAC = 52-57-9C-BF-CB-7A	+ RSSi = -68 dB => Distance_Estime = 2.31m		+ SSiD = DIRECT-H1YObEB862625GOLO
++ 2 / 22	+ MAC = EE-FA-BC-A8-09-D2	+ RSSi = -85 dB => Distance_Estime = 7.56m		+ SSiD = ESP8266_acces_point_304
++ 3 / 22	+ MAC = 86-F3-EB-8E-6F-B1	+ RSSi = -85 dB => Distance_Estime = 7.56m		+ SSiD = ESP8266_acces_point_206
++ 4 / 22	+ MAC = 80-3F-5D-11-FA-7F	+ RSSi = -89 dB => Distance_Estime = 10.00m		+ SSiD = UPMC-Amphi-Herpin-To
++ 5 / 22	+ MAC = 58-97-BD-07-D6-62	+ RSSi = -82 dB => Distance_Estime = 6.14m		+ SSiD = CONGRES
++ 6 / 22	+ MAC = 58-97-BD-07-D6-64	+ RSSi = -82 dB => Distance_Estime = 6.14m		+ SSiD = eduroam
++ 7 / 22	+ MAC = 58-97-BD-07-D6-61	+ RSSi = -81 dB => Distance_Estime = 5.72m		+ SSiD = eduspot
++ 8 / 22	+ MAC = D6-AA-38-24-2A-06	+ RSSi = -91 dB => Distance_Estime = 11.50m		+ SSiD = Ghost 
++ 9 / 22	+ MAC = 04-D9-F5-74-E0-B0	+ RSSi = -90 dB => Distance_Estime = 10.72m		+ SSiD = PPIAdmin
++ 10 / 22	+ MAC = 6E-B5-CF-55-25-0C	+ RSSi = -93 dB => Distance_Estime = 13.22m		+ SSiD = AndroidAPED5A
++ 11 / 22	+ MAC = 96-2E-7F-B1-44-BF	+ RSSi = -56 dB => Distance_Estime = 1.00m		+ SSiD = dargouaga
++ 12 / 22	+ MAC = 6E-04-1F-1F-42-60	+ RSSi = -69 dB => Distance_Estime = 2.48m		+ SSiD = Redmi A1
++ 13 / 22	+ MAC = 4A-AA-C5-74-54-CF	+ RSSi = -79 dB => Distance_Estime = 4.98m		+ SSiD = Ilyes
++ 14 / 22	+ MAC = 58-97-BD-CD-9C-63	+ RSSi = -77 dB => Distance_Estime = 4.33m		+ SSiD = SCAI
++ 15 / 22	+ MAC = C6-01-92-B1-A8-32	+ RSSi = -64 dB => Distance_Estime = 1.75m		+ SSiD = 
