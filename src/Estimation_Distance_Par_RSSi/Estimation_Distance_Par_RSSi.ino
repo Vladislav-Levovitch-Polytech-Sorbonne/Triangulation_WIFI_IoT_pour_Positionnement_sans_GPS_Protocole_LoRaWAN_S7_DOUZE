@@ -40,17 +40,6 @@ void loop()
   uint8_t *BSSID;
   int32_t channel;
   bool isHidden;
-
-  for (int i = 0; i < 5; i++) 
-  {
-    Serial.printf(" .");
-    if (i == 4)
-    {
-      Serial.print("\n\n");
-    }
-    delay(500);
-  }
-
   int Nb_Reseau = WiFi.scanNetworks(false, true);
 
   if (Nb_Reseau == 0) 
