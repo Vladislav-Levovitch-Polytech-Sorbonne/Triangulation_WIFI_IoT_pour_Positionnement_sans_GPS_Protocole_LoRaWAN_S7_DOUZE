@@ -7,8 +7,7 @@ function Decoder(bytes, port)
   let numero_envoi = (envoi_total >> 4) & 0x0F;    //4 bits de poids fort : le 1er quartet contient le numero de l envoi courent
   let total_envoi = envoi_total & 0x0F;            //4 bits de poids faible : le 2eme quartet le nb d envoi total programme
 
-  let nb_envois_restants = bytes[0];
-  let nb_total_envois = bytes[1];
+  let nb_envois_restants = total_envoi - numero_envoi;
   let nb_WiFi = bytes[1];
   
   donnees_decompressees.numero_envoi = numero_envoi;
@@ -16,7 +15,7 @@ function Decoder(bytes, port)
   donnees_decompressees.nb_Reseaux = nb_WiFi;
   donnees_decompressees.Donnees_Appareils = [];
   
-  let nb_de_donnees_a_traiter = (nb_total_envois-nb_envois_restants)>0 ? 7 : nb_WiFi%7;
+  let nb_de_donnees_a_traiter = (total_envoi-numero_envoi)>0 ? 7 : nb_WiFi%7;
 
   for (let i = 0; i < nb_de_donnees_a_traiter; i++) 
   {
