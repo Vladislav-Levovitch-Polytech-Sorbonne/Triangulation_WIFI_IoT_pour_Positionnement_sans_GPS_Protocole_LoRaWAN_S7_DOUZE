@@ -1,0 +1,405 @@
+[
+    {
+        "id": "fcbee16da5dac537",
+        "type": "tab",
+        "label": "Flux 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e5d4c3522cd7a145",
+        "type": "mqtt in",
+        "z": "fcbee16da5dac537",
+        "name": "",
+        "topic": "#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5c59af59afef9af3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 70,
+        "y": 220,
+        "wires": [
+            [
+                "71edf533bc2339eb",
+                "0cbd16c2981c4f7a"
+            ]
+        ]
+    },
+    {
+        "id": "549eda08317d1ca7",
+        "type": "debug",
+        "z": "fcbee16da5dac537",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "29419e0d209d12d2",
+        "type": "file in",
+        "z": "fcbee16da5dac537",
+        "name": "",
+        "filename": "C:\\Users\\vladi\\OneDrive\\.Cours\\.Cours Sorbonne\\S7\\Informatique 8,5 - IOT 4\\TP2_BALAYAN_Vladislav_GrE\\base_de_donnee_et_relevés\\BDD_DOUZE.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 740,
+        "y": 600,
+        "wires": [
+            [
+                "b7d544bf57c04f40"
+            ]
+        ]
+    },
+    {
+        "id": "c47b196b4a988929",
+        "type": "inject",
+        "z": "fcbee16da5dac537",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 600,
+        "wires": [
+            [
+                "29419e0d209d12d2"
+            ]
+        ]
+    },
+    {
+        "id": "b7d544bf57c04f40",
+        "type": "csv",
+        "z": "fcbee16da5dac537",
+        "name": "",
+        "spec": "rfc",
+        "sep": ";",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "MAC,SSID,RSSI,CurrentLatitude,CurrentLongitude,AltitudeMeters,AccuracyMeters,Type",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 350,
+        "y": 660,
+        "wires": [
+            [
+                "ce50464db8149b43"
+            ]
+        ]
+    },
+    {
+        "id": "71edf533bc2339eb",
+        "type": "function",
+        "z": "fcbee16da5dac537",
+        "name": "Decoded Payload",
+        "func": "msg.payload = msg.payload['uplink_message']['decoded_payload'];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 220,
+        "wires": [
+            [
+                "549eda08317d1ca7"
+            ]
+        ]
+    },
+    {
+        "id": "dc84115d16a5ca9b",
+        "type": "inject",
+        "z": "fcbee16da5dac537",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 400,
+        "wires": [
+            [
+                "05d91231546e86f6"
+            ]
+        ]
+    },
+    {
+        "id": "2a9f4f6f45b86e71",
+        "type": "comment",
+        "z": "fcbee16da5dac537",
+        "name": "Reception donnees TTN",
+        "info": "",
+        "x": 130,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "0e0014570ebcefa9",
+        "type": "comment",
+        "z": "fcbee16da5dac537",
+        "name": "Extraction donnees utiles",
+        "info": "",
+        "x": 450,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ce50464db8149b43",
+        "type": "function",
+        "z": "fcbee16da5dac537",
+        "name": "Data_Base",
+        "func": "global.set(\"base_de_donnees\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 660,
+        "wires": [
+            [
+                "d0a1f3f7928ce89c"
+            ]
+        ]
+    },
+    {
+        "id": "d0a1f3f7928ce89c",
+        "type": "debug",
+        "z": "fcbee16da5dac537",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "76acd697cffff80e",
+        "type": "comment",
+        "z": "fcbee16da5dac537",
+        "name": "Reception donnee BDD pour gestion",
+        "info": "",
+        "x": 160,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "0cbd16c2981c4f7a",
+        "type": "function",
+        "z": "fcbee16da5dac537",
+        "name": "Decoded Payload [0]",
+        "func": "msg.payload = msg.payload['uplink_message']['decoded_payload']['Donnees_Appareils'][0];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 180,
+        "wires": [
+            [
+                "385af3fbf9c8950d"
+            ]
+        ]
+    },
+    {
+        "id": "385af3fbf9c8950d",
+        "type": "debug",
+        "z": "fcbee16da5dac537",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "05d91231546e86f6",
+        "type": "function",
+        "z": "fcbee16da5dac537",
+        "name": "Localisation",
+        "func": "// Liste des positions\nconst positions = [\n    { name: \"Position 1\", lat: 48.833842, lon: 2.332641 },\n    { name: \"Position 2\", lat: 48.845051, lon: 2.353623 },\n    { name: \"Position 3\", lat: 48.849548, lon: 2.360280 }\n];\n\n// Stocker la position actuelle dans le contexte\nlet currentIndex = context.get('currentIndex') || 0;\n\n// Obtenir la position actuelle\nconst currentPosition = positions[currentIndex];\n\n// Préparer le message\nmsg.payload = {\n    name: currentPosition.name,\n    lat: currentPosition.lat,\n    lon: currentPosition.lon\n};\n\n// Passer à la prochaine position\ncurrentIndex = (currentIndex + 1) % positions.length;\ncontext.set('currentIndex', currentIndex);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 400,
+        "wires": [
+            [
+                "951483ec65b3347a",
+                "2af5cdf48d7e1184"
+            ]
+        ]
+    },
+    {
+        "id": "951483ec65b3347a",
+        "type": "ui_worldmap",
+        "z": "fcbee16da5dac537",
+        "group": "18c9339bd7f79db8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "msg.payload.name",
+        "lat": "msg.payload.lat",
+        "lon": "msg.payload.lon",
+        "zoom": "17",
+        "layer": "OSMC",
+        "cluster": "1",
+        "maxage": "0",
+        "usermenu": "show",
+        "layers": "hide",
+        "panit": "true",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "true",
+        "coords": "none",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "",
+        "maplist": "OSMC",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 650,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "2af5cdf48d7e1184",
+        "type": "debug",
+        "z": "fcbee16da5dac537",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "08453fc82862d752",
+        "type": "comment",
+        "z": "fcbee16da5dac537",
+        "name": "Gestion affichage position carte",
+        "info": "",
+        "x": 290,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "5c59af59afef9af3",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "18c9339bd7f79db8",
+        "type": "ui_group",
+        "name": "Map",
+        "tab": "f93ec406d568da2f",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f93ec406d568da2f",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]

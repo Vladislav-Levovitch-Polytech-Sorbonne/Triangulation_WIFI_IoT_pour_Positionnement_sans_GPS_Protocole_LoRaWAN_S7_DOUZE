@@ -1,0 +1,80 @@
++ 33 / 35	+ MAC = e8-65-d4-72-f9-71	+ RSSI = -75 dB => Distance_Estime = 3.76m		+ SSID = ISCD
++ 34 / 35	+ MAC = 58-97-bd-cd-94-80	+ RSSI = -90 dB => Distance_Estime = 10.72m		+ SSID = eduspot
++ 35 / 35	+ MAC = 58-97-bd-bb-fe-c2	+ RSSI = -91 dB => Distance_Estime = 11.50m		+ SSID = eduroam
+
+Debut de transmission de la chaine 5 sur 5 :
+AT+MSGHEX="55235897bd80ccb2b05897bd80ccb1b0fc9c984f4016b15897bd80ccb3afe865d472f971b55897bdcd9480a65897bdbbfec2a5"
++MSGHEX: Done
+
++INFO: Input timeout
++MSGHEX: Start
+ . . . . . . . . . .
+Nombre de reseau trouve : 46
++ 1 / 46	+ MAC = 86-f3-eb-58-b5-15	+ RSSI = -87 dB => Distance_Estime = 8.70m		+ SSID = ESP8266_acces_point_324
++ 2 / 46	+ MAC = 58-97-bd-cd-93-e0	+ RSSI = -75 dB => Distance_Estime = 3.76m		+ SSID = eduspot
++ 3 / 46	+ MAC = 58-97-bd-cd-93-e2	+ RSSI = -76 dB => Distance_Estime = 4.04m		+ SSID = eduroam
++ 4 / 46	+ MAC = 58-97-bd-cd-93-e1	+ RSSI = -76 dB => Distance_Estime = 4.04m		+ SSID = CONGRES
++ 5 / 46	+ MAC = 58-97-bd-cd-93-e3	+ RSSI = -75 dB => Distance_Estime = 3.76m		+ SSID = SCAI
++ 6 / 46	+ MAC = 58-97-bd-9c-b2-00	+ RSSI = -86 dB => Distance_Estime = 8.11m		+ SSID = eduspot
++ 7 / 46	+ MAC = 58-97-bd-cd-94-82	+ RSSI = -88 dB => Distance_Estime = 9.33m		+ SSID = eduroam
+
+Debut de transmission de la chaine 1 sur 7 :
+AT+MSGHEX="172e86f3eb58b515a95897bdcd93e0b55897bdcd93e2b45897bdcd93e1b45897bdcd93e3b55897bd9cb200aa5897bdcd9482a8"
++MSGHEX: Done
+
++INFO: Input timeout
++MSGHEX: Start
+ . . . . . . . . . .
++ 8 / 46	+ MAC = 58-97-bd-cd-94-81	+ RSSI = -88 dB => Distance_Estime = 9.33m		+ SSID = CONGRES
++ 9 / 46	+ MAC = 58-97-bd-bb-fe-c1	+ RSSI = -83 dB => Distance_Estime = 6.58m		+ SSID = CONGRES
++ 10 / 46	+ MAC = ee-fa-bc-a8-0a-54	+ RSSI = -83 dB => Distance_Estime = 6.58m		+ SSID = ESP8266_acces_point_327
++ 11 / 46	+ MAC = 58-97-bd-bb-fe-c3	+ RSSI = -76 dB => Distance_Estime = 4.04m		+ SSID = SCAI
++ 12 / 46	+ MAC = ee-fa-bc-a8-0f-c8	+ RSSI = -85 dB => Distance_Estime = 7.56m		+ SSID = ESP8266_acces_point_319
++ 13 / 46	+ MAC = 58-97-bd-9c-b2-02	+ RSSI = -87 dB => Distance_Estime = 8.70m		+ SSID = eduroam
++ 14 / 46	+ MAC = 58-97-bd-cd-94-80	+ RSSI = -88 dB => Distance_Estime = 9.33m		+ SSID = eduspot
+
+Debut de transmission de la chaine 2 sur 7 :
+AT+MSGHEX="272e5897bdcd9481a85897bdbbfec1adeefabca80a54ad5897bdbbfec3b4eefabca80fc8ab5897bd9cb202a95897bdcd9480a8"
++MSGHEX: Done
+
++INFO: Input timeout
++MSGHEX: Start
+ . . . . . . . . . .
++ 15 / 46	+ MAC = 58-97-bd-9c-b2-01	+ RSSI = -87 dB => Distance_Estime = 8.70m		+ SSID = CONGRES
++ 16 / 46	+ MAC = 58-97-bd-9c-b2-03	+ RSSI = -88 dB => Distance_Estime = 9.33m		+ SSID = SCAI
++ 17 / 46	+ MAC = 58-97-bd-bb-fe-c0	+ RSSI = -84 dB => Distance_Estime = 7.05m		+ SSID = eduspot
++ 18 / 46	+ MAC = 9a-18-65-e6-91-ae	+ RSSI = -88 dB => Distance_Estime = 9.33m		+ SSID = NTGRBH_941865E691AF
++ 19 / 46	+ MAC = 58-97-bd-cd-94-83	+ RSSI = -89 dB => Distance_Estime = 10.00m		+ SSID = SCAI
++ 20 / 46	+ MAC = e8-65-d4-72-f9-69	+ RSSI = -92 dB => Distance_Estime = 12.33m		+ SSID = ISCD
++ 21 / 46	+ MAC = 58-97-bd-cd-92-60	+ RSSI = -70 dB => Distance_Estime = 2.66m		+ SSID = eduspot
+
+Debut de transmission de la chaine 3 sur 7 :
+AT+MSGHEX="372e5897bd9cb201a95897bd9cb203a85897bdbbfec0ac9a1865e691aea85897bdcd9483a7e865d472f969a45897bdcd9260ba"
++MSGHEX: Done
+
++INFO: Input timeout
++MSGHEX: Start
+ . . . . . . . . . .
++ 22 / 46	+ MAC = 86-69-93-f8-37-57	+ RSSI = -63 dB => Distance_Estime = 1.63m		+ SSID = DIRECT-57-HP M428fdw LJ
++ 23 / 46	+ MAC = e8-65-d4-72-f9-79	+ RSSI = -82 dB => Distance_Estime = 6.14m		+ SSID = ISCD
++ 24 / 46	+ MAC = c8-be-19-70-d0-d6	+ RSSI = -66 dB => Distance_Estime = 2.01m		+ SSID = EtuPPI
++ 25 / 46	+ MAC = 58-97-bd-cd-92-62	+ RSSI = -72 dB => Distance_Estime = 3.05m		+ SSID = eduroam
++ 26 / 46	+ MAC = 58-97-bd-cd-92-61	+ RSSI = -73 dB => Distance_Estime = 3.27m		+ SSID = CONGRES
++ 27 / 46	+ MAC = 58-97-bd-cd-9c-61	+ RSSI = -82 dB => Distance_Estime = 6.14m		+ SSID = CONGRES
++ 28 / 46	+ MAC = 58-97-bd-cd-92-63	+ RSSI = -71 dB => Distance_Estime = 2.85m		+ SSID = SCAI
+
+Debut de transmission de la chaine 4 sur 7 :
+AT+MSGHEX="472e866993f83757c1e865d472f979aec8be1970d0d6be5897bdcd9262b85897bdcd9261b75897bdcd9c61ae5897bdcd9263b9"
++MSGHEX: Done
+
++INFO: Input timeout
++MSGHEX: Start
+ . . . . . . . . . .
++ 29 / 46	+ MAC = 08-5a-11-28-8a-10	+ RSSI = -90 dB => Distance_Estime = 10.72m		+ SSID = fablabstaff
++ 30 / 46	+ MAC = 08-5a-11-28-8a-11	+ RSSI = -93 dB => Distance_Estime = 13.22m		+ SSID = fablab
++ 31 / 46	+ MAC = 08-5a-11-28-8a-12	+ RSSI = -90 dB => Distance_Estime = 10.72m		+ SSID = fablabo
++ 32 / 46	+ MAC = 08-5a-11-28-8a-14	+ RSSI = -90 dB => Distance_Estime = 10.72m		+ SSID = fablab-bad
++ 33 / 46	+ MAC = 58-d9-d5-41-50-92	+ RSSI = -70 dB => Distance_Estime = 2.66m		+ SSID = scaiteam
++ 34 / 46	+ MAC = 58-d9-d5-41-50-30	+ RSSI = -63 dB => Distance_Estime = 1.63m		+ SSID = 
++ 35 / 46	+ MAC = 58-d9-d5-41-50-32	+ RSSI = -63 dB => Distance_Estime = 1.63m		+ SSID = scaiteam
+
