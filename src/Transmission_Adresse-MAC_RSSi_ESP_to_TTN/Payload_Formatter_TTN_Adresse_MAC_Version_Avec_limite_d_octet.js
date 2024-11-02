@@ -15,12 +15,12 @@ function Decoder(bytes, port)
   donnees_decompressees.nb_Reseaux = nb_WiFi;
   donnees_decompressees.Donnees_Appareils = [];
   
-  let nb_de_donnees_a_traiter = (total_envoi-numero_envoi)>0 ? 7 : nb_WiFi%7;
+  let nb_de_donnees_a_traiter = (total_envoi-numero_envoi)>0 || (nb_WiFi%7===0) ? 7 : nb_WiFi%7;
 
   for (let i = 0; i < nb_de_donnees_a_traiter; i++) 
   {
     let start = 2 + i * 7; //Decalage du au 2 premiers octet d information
-    let MacHex = bytes.slice(start, start + 6).map(b => b.toString(16).padStart(2, '0')).join('-').toUpperCase();
+    let MacHex = bytes.slice(start, start + 6).map(b => b.toString(16).padStart(2, '0')).join(':').toUpperCase();
 
     // Interpréter le RSSI en signed 8-bit
     let RssiHex = bytes[start + 6] > 127 ? bytes[start + 6] - 256 : bytes[start + 6];
