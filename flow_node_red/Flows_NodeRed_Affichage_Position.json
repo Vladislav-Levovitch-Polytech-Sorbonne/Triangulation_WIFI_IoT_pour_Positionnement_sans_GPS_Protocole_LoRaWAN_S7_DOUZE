@@ -2,7 +2,7 @@
     {
         "id": "fcbee16da5dac537",
         "type": "tab",
-        "label": "Flux 4",
+        "label": "Reception Donne TTN to Position",
         "disabled": false,
         "info": "",
         "env": []
@@ -21,7 +21,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 70,
-        "y": 220,
+        "y": 280,
         "wires": [
             [
                 "71edf533bc2339eb",
@@ -34,15 +34,15 @@
         "type": "debug",
         "z": "fcbee16da5dac537",
         "name": "debug 1",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 780,
-        "y": 220,
+        "x": 720,
+        "y": 340,
         "wires": []
     },
     {
@@ -58,7 +58,7 @@
         "encoding": "none",
         "allProps": false,
         "x": 740,
-        "y": 600,
+        "y": 80,
         "wires": [
             [
                 "b7d544bf57c04f40"
@@ -87,7 +87,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 110,
-        "y": 600,
+        "y": 80,
         "wires": [
             [
                 "29419e0d209d12d2"
@@ -111,7 +111,7 @@
         "include_empty_strings": "",
         "include_null_values": "",
         "x": 350,
-        "y": 660,
+        "y": 140,
         "wires": [
             [
                 "ce50464db8149b43"
@@ -122,7 +122,7 @@
         "id": "71edf533bc2339eb",
         "type": "function",
         "z": "fcbee16da5dac537",
-        "name": "Decoded Payload",
+        "name": "Decoded Payload [7n to 7(n+1)-1]",
         "func": "msg.payload = msg.payload['uplink_message']['decoded_payload'];\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -130,8 +130,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 220,
+        "x": 420,
+        "y": 340,
         "wires": [
             [
                 "549eda08317d1ca7"
@@ -152,7 +152,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "2",
+        "repeat": "10",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
@@ -160,7 +160,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 250,
-        "y": 400,
+        "y": 500,
         "wires": [
             [
                 "05d91231546e86f6"
@@ -174,7 +174,7 @@
         "name": "Reception donnees TTN",
         "info": "",
         "x": 130,
-        "y": 140,
+        "y": 240,
         "wires": []
     },
     {
@@ -183,8 +183,8 @@
         "z": "fcbee16da5dac537",
         "name": "Extraction donnees utiles",
         "info": "",
-        "x": 450,
-        "y": 140,
+        "x": 390,
+        "y": 240,
         "wires": []
     },
     {
@@ -192,7 +192,7 @@
         "type": "function",
         "z": "fcbee16da5dac537",
         "name": "Data_Base",
-        "func": "global.set(\"base_de_donnees\", msg.payload);\nreturn msg;",
+        "func": "msg.payload = [msg.payload]; \n\nglobal.set(\"base_de_donnees\", msg.payload);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -200,10 +200,10 @@
         "finalize": "",
         "libs": [],
         "x": 510,
-        "y": 660,
+        "y": 140,
         "wires": [
             [
-                "d0a1f3f7928ce89c"
+                "c71e6788c4f2aeb2"
             ]
         ]
     },
@@ -219,8 +219,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 680,
-        "y": 660,
+        "x": 880,
+        "y": 140,
         "wires": []
     },
     {
@@ -230,7 +230,7 @@
         "name": "Reception donnee BDD pour gestion",
         "info": "",
         "x": 160,
-        "y": 540,
+        "y": 20,
         "wires": []
     },
     {
@@ -245,8 +245,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 440,
-        "y": 180,
+        "x": 380,
+        "y": 280,
         "wires": [
             [
                 "385af3fbf9c8950d"
@@ -265,8 +265,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 780,
-        "y": 180,
+        "x": 720,
+        "y": 280,
         "wires": []
     },
     {
@@ -274,7 +274,7 @@
         "type": "function",
         "z": "fcbee16da5dac537",
         "name": "Localisation",
-        "func": "// Liste des positions\nconst positions = [\n    { name: \"Position 1\", lat: 48.833842, lon: 2.332641 },\n    { name: \"Position 2\", lat: 48.845051, lon: 2.353623 },\n    { name: \"Position 3\", lat: 48.849548, lon: 2.360280 }\n];\n\n// Stocker la position actuelle dans le contexte\nlet currentIndex = context.get('currentIndex') || 0;\n\n// Obtenir la position actuelle\nconst currentPosition = positions[currentIndex];\n\n// Préparer le message\nmsg.payload = {\n    name: currentPosition.name,\n    lat: currentPosition.lat,\n    lon: currentPosition.lon\n};\n\n// Passer à la prochaine position\ncurrentIndex = (currentIndex + 1) % positions.length;\ncontext.set('currentIndex', currentIndex);\n\nreturn msg;\n",
+        "func": "// Liste des positions\nconst positions = [\n    { name: \"Position_avec_7_donnees\", lat: 48.833842, lon: 2.332641 },\n    { name: \"Position_avec_14_donnees\", lat: 48.845051, lon: 2.353623 },\n    { name: \"Position_avec_19_donnees\", lat: 48.849548, lon: 2.360280 }\n];\n\n// Stocker la position actuelle dans le contexte\nlet currentIndex = context.get('currentIndex') || 0;\n\n// Obtenir la position actuelle\nconst currentPosition = positions[currentIndex];\n\n// Préparer le message\nmsg.payload = {\n    name: currentPosition.name,\n    lat: currentPosition.lat,\n    lon: currentPosition.lon\n};\n\n// Passer à la prochaine position\ncurrentIndex = (currentIndex + 1) % positions.length;\ncontext.set('currentIndex', currentIndex);\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -282,7 +282,7 @@
         "finalize": "",
         "libs": [],
         "x": 430,
-        "y": 400,
+        "y": 500,
         "wires": [
             [
                 "951483ec65b3347a",
@@ -323,7 +323,7 @@
         "mapopt": "",
         "mapwms": false,
         "x": 650,
-        "y": 400,
+        "y": 500,
         "wires": []
     },
     {
@@ -339,7 +339,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 620,
-        "y": 460,
+        "y": 560,
         "wires": []
     },
     {
@@ -348,9 +348,105 @@
         "z": "fcbee16da5dac537",
         "name": "Gestion affichage position carte",
         "info": "",
-        "x": 290,
-        "y": 340,
+        "x": 490,
+        "y": 440,
         "wires": []
+    },
+    {
+        "id": "b7383f324cba25c1",
+        "type": "comment",
+        "z": "fcbee16da5dac537",
+        "name": "MAJ position manuel",
+        "info": "",
+        "x": 250,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "c71e6788c4f2aeb2",
+        "type": "function",
+        "z": "fcbee16da5dac537",
+        "name": "Regroupement",
+        "func": "// Récupérer le tableau existant, ou en créer un vide s'il n'existe pas\nlet bddData = global.get(\"base_de_donnees\") || [];\n\n// Ajouter la nouvelle donnée à bddData\nlet newData = msg.payload[0]; // Extraire l'objet de msg.payload (array[1])\n\n// Vérifier si l'objet existe déjà dans bddData en fonction de la MAC\nlet existeDeja = bddData.some(item => item.MAC === newData.MAC);\n\nif (!existeDeja) {\n    bddData.push(newData); // Ajouter la nouvelle donnée si elle n'existe pas encore\n}\n\n// Mettre à jour le tableau global\nglobal.set(\"base_de_donnees\", bddData);\n\n// Retourner la base de données mise à jour dans msg.payload pour vérification\nmsg.payload = bddData;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 140,
+        "wires": [
+            [
+                "d0a1f3f7928ce89c"
+            ]
+        ]
+    },
+    {
+        "id": "ac5b6c715d82e476",
+        "type": "debug",
+        "z": "fcbee16da5dac537",
+        "name": "Lecture BDD",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "ddb1932da6eb5973",
+        "type": "function",
+        "z": "fcbee16da5dac537",
+        "name": "Verification_Debug_BDD",
+        "func": "msg.payload = global.get(\"base_de_donnees\")\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 200,
+        "wires": [
+            [
+                "ac5b6c715d82e476"
+            ]
+        ]
+    },
+    {
+        "id": "3ab8dd67032d79a9",
+        "type": "inject",
+        "z": "fcbee16da5dac537",
+        "name": "Test_Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 600,
+        "y": 200,
+        "wires": [
+            [
+                "ddb1932da6eb5973"
+            ]
+        ]
     },
     {
         "id": "5c59af59afef9af3",
