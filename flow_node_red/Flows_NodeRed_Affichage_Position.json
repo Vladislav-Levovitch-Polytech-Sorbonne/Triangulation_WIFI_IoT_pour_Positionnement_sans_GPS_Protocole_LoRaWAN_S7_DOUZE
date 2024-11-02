@@ -21,7 +21,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 70,
-        "y": 280,
+        "y": 320,
         "wires": [
             [
                 "71edf533bc2339eb",
@@ -34,15 +34,15 @@
         "type": "debug",
         "z": "fcbee16da5dac537",
         "name": "debug 1",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
-        "y": 340,
+        "x": 740,
+        "y": 420,
         "wires": []
     },
     {
@@ -131,39 +131,11 @@
         "finalize": "",
         "libs": [],
         "x": 420,
-        "y": 340,
+        "y": 380,
         "wires": [
             [
-                "549eda08317d1ca7"
-            ]
-        ]
-    },
-    {
-        "id": "dc84115d16a5ca9b",
-        "type": "inject",
-        "z": "fcbee16da5dac537",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "10",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 250,
-        "y": 500,
-        "wires": [
-            [
-                "05d91231546e86f6"
+                "549eda08317d1ca7",
+                "706b75657f645dab"
             ]
         ]
     },
@@ -174,7 +146,7 @@
         "name": "Reception donnees TTN",
         "info": "",
         "x": 130,
-        "y": 240,
+        "y": 280,
         "wires": []
     },
     {
@@ -184,7 +156,7 @@
         "name": "Extraction donnees utiles",
         "info": "",
         "x": 390,
-        "y": 240,
+        "y": 280,
         "wires": []
     },
     {
@@ -212,7 +184,7 @@
         "type": "debug",
         "z": "fcbee16da5dac537",
         "name": "debug 2",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -246,7 +218,7 @@
         "finalize": "",
         "libs": [],
         "x": 380,
-        "y": 280,
+        "y": 320,
         "wires": [
             [
                 "385af3fbf9c8950d"
@@ -265,30 +237,9 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
-        "y": 280,
+        "x": 600,
+        "y": 320,
         "wires": []
-    },
-    {
-        "id": "05d91231546e86f6",
-        "type": "function",
-        "z": "fcbee16da5dac537",
-        "name": "Localisation",
-        "func": "// Liste des positions\nconst positions = [\n    { name: \"Position_avec_7_donnees\", lat: 48.833842, lon: 2.332641 },\n    { name: \"Position_avec_14_donnees\", lat: 48.845051, lon: 2.353623 },\n    { name: \"Position_avec_19_donnees\", lat: 48.849548, lon: 2.360280 }\n];\n\n// Stocker la position actuelle dans le contexte\nlet currentIndex = context.get('currentIndex') || 0;\n\n// Obtenir la position actuelle\nconst currentPosition = positions[currentIndex];\n\n// Préparer le message\nmsg.payload = {\n    name: currentPosition.name,\n    lat: currentPosition.lat,\n    lon: currentPosition.lon\n};\n\n// Passer à la prochaine position\ncurrentIndex = (currentIndex + 1) % positions.length;\ncontext.set('currentIndex', currentIndex);\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 430,
-        "y": 500,
-        "wires": [
-            [
-                "951483ec65b3347a",
-                "2af5cdf48d7e1184"
-            ]
-        ]
     },
     {
         "id": "951483ec65b3347a",
@@ -298,7 +249,7 @@
         "order": 0,
         "width": 0,
         "height": 0,
-        "name": "msg.payload.name",
+        "name": "Positionnement_par_Affinage",
         "lat": "msg.payload.lat",
         "lon": "msg.payload.lon",
         "zoom": "17",
@@ -322,24 +273,8 @@
         "mapurl": "",
         "mapopt": "",
         "mapwms": false,
-        "x": 650,
-        "y": 500,
-        "wires": []
-    },
-    {
-        "id": "2af5cdf48d7e1184",
-        "type": "debug",
-        "z": "fcbee16da5dac537",
-        "name": "debug 4",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 620,
-        "y": 560,
+        "x": 1100,
+        "y": 380,
         "wires": []
     },
     {
@@ -348,18 +283,8 @@
         "z": "fcbee16da5dac537",
         "name": "Gestion affichage position carte",
         "info": "",
-        "x": 490,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "b7383f324cba25c1",
-        "type": "comment",
-        "z": "fcbee16da5dac537",
-        "name": "MAJ position manuel",
-        "info": "",
-        "x": 250,
-        "y": 560,
+        "x": 1110,
+        "y": 340,
         "wires": []
     },
     {
@@ -447,6 +372,43 @@
                 "ddb1932da6eb5973"
             ]
         ]
+    },
+    {
+        "id": "706b75657f645dab",
+        "type": "function",
+        "z": "fcbee16da5dac537",
+        "name": "Comparaison_BDD",
+        "func": "// Recuperation de la liste de la base de donnees\nlet liste_BDD = global.get(\"base_de_donnees\") || [];\n\n// Initialisation ou recuperation des variables globales pour le calcul\nlet numerateur_pondere_x = global.get(\"numerateur_pondere_x\") || 0;\nlet numerateur_pondere_y = global.get(\"numerateur_pondere_y\") || 0;\nlet denominateur_pondere_x = global.get(\"denominateur_pondere_x\") || 0;\nlet denominateur_pondere_y = global.get(\"denominateur_pondere_y\") || 0;\n\n// Parcours de chaque appareil dans Donnees_Appareils\nmsg.payload.Donnees_Appareils.forEach(appareil => \n{\n    // Convertir l'adresse MAC reçue en minuscule pour la comparaison\n    let macRecu = appareil.MAC.toLowerCase();\n\n    // Chercher l'appareil dans liste_BDD en comparant les MAC en minuscules\n    let match = liste_BDD.find(item => item.MAC.toLowerCase() === macRecu);\n\n    if (match && appareil.Distance_Estime) \n    {\n        // Calcul du coefficient de ponderation base sur Distance_Estime\n        let coefficient_de_ponderation = 2 / Math.pow(appareil.Distance_Estime, 0.65);\n\n        // Incrementer les numerateurs et denominateurs ponderes\n        numerateur_pondere_x += match.CurrentLatitude * coefficient_de_ponderation;\n        denominateur_pondere_x += coefficient_de_ponderation;\n\n        numerateur_pondere_y += match.CurrentLongitude * coefficient_de_ponderation;\n        denominateur_pondere_y += coefficient_de_ponderation;\n    }\n});\n\n// Calcul des coordonnees ponderees apres chaque paquet\nlet coordonnee_ponderee_x = denominateur_pondere_x !== 0 ? numerateur_pondere_x / denominateur_pondere_x : null;\nlet coordonnee_ponderee_y = denominateur_pondere_y !== 0 ? numerateur_pondere_y / denominateur_pondere_y : null;\n\n// Ajout des coordonnees calculees au message de sortie\nmsg.payload = \n{\n    name : \"\",\n    lat : coordonnee_ponderee_x,\n    lon : coordonnee_ponderee_y\n};\n\n// Mettre a jour les variables globales pour stocker l'etat courant\nglobal.set(\"numerateur_pondere_x\", numerateur_pondere_x);\nglobal.set(\"numerateur_pondere_y\", numerateur_pondere_y);\nglobal.set(\"denominateur_pondere_x\", denominateur_pondere_x);\nglobal.set(\"denominateur_pondere_y\", denominateur_pondere_y);\n\n// Si tous les paquets ont ete reçus, reinitialiser les variables globales\nif (msg.payload.numero_envoi === msg.payload.total_envoi) \n{\n    global.set(\"numerateur_pondere_x\", 0);\n    global.set(\"numerateur_pondere_y\", 0);\n    global.set(\"denominateur_pondere_x\", 0);\n    global.set(\"denominateur_pondere_y\", 0);\n}\n\nreturn msg;\n\n//Co-Commente par ChatGPT",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 380,
+        "wires": [
+            [
+                "7076955909295bbf",
+                "951483ec65b3347a"
+            ]
+        ]
+    },
+    {
+        "id": "7076955909295bbf",
+        "type": "debug",
+        "z": "fcbee16da5dac537",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 420,
+        "wires": []
     },
     {
         "id": "5c59af59afef9af3",
